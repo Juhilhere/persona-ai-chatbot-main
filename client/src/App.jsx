@@ -20,16 +20,16 @@ function App() {
   const getSuggestions = (persona) => {
     if (persona === "anshuman") {
       return [
-        "Explain recursion simply",
+        "Explain Segment Tree simply",
         "What is dynamic programming?",
-        "How to approach trees?",
+        "How to Recursion trees?",
       ];
     }
     if (persona === "abhimanyu") {
       return [
         "How to build a startup?",
-        "DSA vs projects?",
-        "How to stay consistent?",
+        "ML projects?",
+        "How to solve a problem?",
       ];
     }
     return [
