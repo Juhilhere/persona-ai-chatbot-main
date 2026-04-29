@@ -1,101 +1,40 @@
-# 🤖 Persona-Based AI Chatbot
+# Persona-Based AI Chatbot
 
-A real-world application built using prompt engineering concepts, where users can interact with three distinct personalities from Scaler Academy:
+This project is a prompt-engineering demo built with React and Node.js. It lets users chat with three Scaler Academy personas, each with a different response style driven by a separate system prompt.
 
-- **Anshuman Singh**
-- **Abhimanyu Saxena**
-- **Kshitij Mishra**
+## Overview
 
-Each persona behaves uniquely based on carefully designed system prompts.
+The application focuses on persona-driven behavior rather than a generic chatbot response. Each persona is designed to respond with a distinct tone and structure:
 
-## 🎭 Persona Differences
+- Anshuman Singh: concept-first and guided
+- Abhimanyu Saxena: direct and execution-focused
+- Kshitij Mishra: pattern-based and technical
 
-Each persona exhibits distinct behaviors:
+## Screenshots
 
-- **Anshuman Singh** → Concept-first, guides with questions
-- **Abhimanyu Saxena** → Direct, execution-focused advice
-- **Kshitij Mishra** → Pattern-based, technical, optimized thinking
+The screenshots below are included in the repository and show the current UI.
 
----
+![Chat interface home state](server/image.png)
+![Anshuman persona conversation](server/image-1.png)
+![Abhimanyu persona conversation](server/image-2.png)
 
-## 🔗 Live Demo
+## Features
 
-> Frontend: https://persona-ai-chatbot-phi.vercel.app/  
-> Backend: https://persona-chatbot-backend-uh2z.onrender.com/
+- Switch between three personas
+- Persona-specific suggestion chips
+- Typing indicator while the response is loading
+- Chat reset when the persona changes
+- Responsive layout for desktop and mobile
 
----
+## Tech Stack
 
-## 🧠 Features
+- Frontend: React, Vite, plain CSS
+- Backend: Node.js, Express
+- API: OpenAI-compatible AICredits endpoint
 
-- Switch between three distinct personas
-- Each persona exhibits a unique communication style
-- Suggestion chips enable quick interaction
-- Typing indicator while the model responds
-- Chat resets upon persona selection
-- Polished and responsive UI (works on mobile + desktop)
-
----
-
-## 🏗️ Tech Stack
-
-**Frontend:**
-
-- React (Vite)
-- Plain CSS
-
-**Backend:**
-
-- Node.js
-- Express
-
-**API:**
-
-- AICredits (OpenAI-compatible API)
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
+## Project Structure
 
 ```bash
-git clone <your-repo-link>
-cd persona-ai-chatbot
-```
-
-### 2. Backend Setup
-
-```bash
-cd server
-npm install
-```
-
-Create a `.env` file:
-
-```env
-API_KEY=your_api_key_here
-API_BASE_URL=https://api.aicredits.in/v1
-```
-
-Run the backend:
-
-```bash
-npm start
-```
-
-### 3. Frontend Setup
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
----
-
-## 📁 Project Structure
-
-```
 persona-ai-chatbot/
 ├── client/
 ├── server/
@@ -104,31 +43,56 @@ persona-ai-chatbot/
 └── README.md
 ```
 
----
+## Setup
 
-## ⚠️ Important Notes
+### 1. Clone the repository
 
-- API keys are **not** included in the repository
-- `.env.example` is provided for reference
-- Ensure the backend is running before using the frontend
+```bash
+git clone <your-repo-link>
+cd persona-ai-chatbot
+```
 
----
+### 2. Backend setup
 
-## 🚀 What This Project Demonstrates
+```bash
+cd server
+npm install
+```
 
-- Strong prompt engineering with persona design
-- Real API integration
-- Clean frontend-backend architecture
-- Practical application of LLM concepts
+Create a `.env` file in the `server` folder:
 
----
+```env
+API_KEY=your_api_key_here
+API_BASE_URL=https://api.aicredits.in/v1
+```
 
-## 📸 Screenshots
+Start the backend:
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+```bash
+npm start
+```
 
-## 🙌 Acknowledgement
+### 3. Frontend setup
 
-This project was built as part of the **Prompt Engineering** module at [Scaler School Of Technology](https://www.scaler.com/).
+```bash
+cd client
+npm install
+npm run dev
+```
+
+## Notes
+
+- API keys are not committed to the repository
+- Use the `.env.example` file in the `server` folder as a reference
+- Start the backend before opening the frontend
+
+## What This Project Demonstrates
+
+- Prompt design for distinct personas
+- Response control through system instructions
+- Basic frontend and backend integration
+- Practical use of LLM-based conversation flows
+
+## Acknowledgement
+
+This project was completed as part of the Prompt Engineering module at [Scaler School of Technology](https://www.scaler.com/).
