@@ -63,7 +63,7 @@ Create a `.env` file in the `server` folder:
 
 ```env
 API_KEY=your_api_key_here
-API_BASE_URL=https://api.aicredits.in/v1
+API_BASE_URL=your_url_here
 ```
 
 Start the backend:
